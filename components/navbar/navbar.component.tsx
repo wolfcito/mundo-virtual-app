@@ -5,8 +5,8 @@ import Link from 'next/link'
 export function Navbar() {
   return (
     <nav className="navbar bg-neutral text-neutral-content">
-      <Link href={'/'} className="text-xl normal-case btn btn-ghost">
-        <div className="indicator">
+      <Link href="/">
+        <div className="text-xl normal-case indicator btn btn-ghost">
           <span className="text-xs text-purple-700 indicator-item indicator-bottom indicator-end">
             v{pkg.version}
           </span>
