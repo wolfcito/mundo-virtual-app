@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .progress-bar {
+    @apply fixed top-0 left-0 right-0 h-2 origin-left bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-500
+  }
+}
