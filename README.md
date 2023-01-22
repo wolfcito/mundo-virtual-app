@@ -1,12 +1,13 @@
-<center><b style = 'color : blue; font-size: 50px;'>Mundo Virtual Solutions</b></center></b></p>
+<center><p><b style = 'color : blue; font-size: 50px;'>Mundo Virtual Solutions</b></p></center>
 
 - Documentation
 - Tech Stack
 - Coding Conventions
 
+_ _ _
 
 ```bash
- ├── components...................................
+├── components...................................
 │   └── navbar
 │       ├── index.ts
 │       └── navbar.component.tsx
@@ -353,7 +354,7 @@ Like any pattern, RORO should be seen as just another tool in our tool box. We u
       <button onClick={myMethod}>let's goo!</button>
     </div>
   )
-  
+
   }
 
   export interface MyReactComponetParams {
