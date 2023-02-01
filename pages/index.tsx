@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import { Navbar } from '~/components/navbar'
+import Head from "next/head";
+import { Card } from "~/components/card";
+import { Navbar } from "~/components/navbar";
 
 export default function Home() {
   return (
@@ -12,16 +13,15 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-
-        <div>Desarrollo e Investigación</div>
-        <div>Agregando nuestro granito de arena.</div>
+        <Card />
+        <div>Development and Research</div>
+        <div>Adding our grain of sand.</div>
 
         <div>
-          MundoVirtual enfoca sus esfuerzos para apoyar a personas a plasmar sus
-          ideas a través asesorarías, construcción prototipos y aterrizarlos en
-          un MVP.
+          MundoVirtual focuses its efforts to support people to translate their
+          ideas through advice, construction prototypes and land them in an MVP.
         </div>
       </main>
     </>
-  )
+  );
 }

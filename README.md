@@ -247,6 +247,39 @@ _Currently, Solidity is the main language in Ethereum as well as in other privat
 
 ---
 
+> ### Yarn:
+
+#### Installation of yarn version 1.22.19 via npm:
+
+#### first step:
+
+_it is recommended to install Yarn through the npm package
+manager, which comes bundled with Node.js when you install it on
+your system. Once you have npm installed you can run the
+following both to install and upgrade Yarn:_
+
+> npm install --global yarn
+
+#### second step:
+
+_You can also try this way indicating directly the version to
+install:_
+
+> yarn install
+
+#### check version:
+
+_we can use the following command to check the version we
+installed:_
+
+> yarn dev
+
+#### more information about the installation:
+
+\_ Here you will have more information about the installation of:
+
+[installation yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable)
+
 > ## General Philosoph:
 
 _The project aims to facilitate starting up quickly and following industry best practices.
@@ -333,7 +366,7 @@ Like any pattern, RORO should be seen as just another tool in our tool box. We u
 
 ### ReactJS Conventions:
 
-- declare component with function keyword
+- declare component with `function` keyword
 - use const for methods
 - place code in the following order
 
