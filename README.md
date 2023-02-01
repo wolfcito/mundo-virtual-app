@@ -4,7 +4,7 @@
 - Tech Stack
 - Coding Conventions
 
-_ _ _
+---
 
 ```bash
 ├── components...................................
@@ -45,16 +45,16 @@ _ _ _
 
 > ### @Next/font
 
-*includes built-in automatic self-hosting for any font file. This means you can optimally load web fonts with zero layout shift, thanks to the underlying CSS size-adjust property used.*
+_includes built-in automatic self-hosting for any font file. This means you can optimally load web fonts with zero layout shift, thanks to the underlying CSS size-adjust property used._
 
-*This new font system also allows you to conveniently use all Google Fonts with performance and privacy in mind. CSS and font files are downloaded at build time and self-hosted with the rest of your static assets. No requests are sent to Google by the browser*
+_This new font system also allows you to conveniently use all Google Fonts with performance and privacy in mind. CSS and font files are downloaded at build time and self-hosted with the rest of your static assets. No requests are sent to Google by the browser_
 
 ---
 
 > ### @Types/node
 
- Is a tool in the npm Packages category of a tech stack.
- is an open source tool with 42.3K GitHub stars and 28.5K GitHub forks. Here’s a link to @types/node's open source repository on GitHub
+Is a tool in the npm Packages category of a tech stack.
+is an open source tool with 42.3K GitHub stars and 28.5K GitHub forks. Here’s a link to @types/node's open source repository on GitHub
 
 > ### types :
 
@@ -64,7 +64,7 @@ _Difficult to maintain is one of the main reasons why Java and C# developers avo
 
 > ### Node :
 
-*Node.js_ is an engine that runs JavaScript, not TypeScript. The node TypeScript package allows us to transpile your .ts files to .js scripts. Babel can also be used to transpile TypeScript, but the market standard is the official Microsoft package.*
+_Node.js\_ is an engine that runs JavaScript, not TypeScript. The node TypeScript package allows us to transpile your .ts files to .js scripts. Babel can also be used to transpile TypeScript, but the market standard is the official Microsoft package._
 
 > ### Types/react :
 
@@ -247,6 +247,39 @@ _Currently, Solidity is the main language in Ethereum as well as in other privat
 
 ---
 
+> ### Yarn:
+
+#### Installation of yarn version 1.22.19 via npm:
+
+#### first step:
+
+_it is recommended to install Yarn through the npm package
+manager, which comes bundled with Node.js when you install it on
+your system. Once you have npm installed you can run the
+following both to install and upgrade Yarn:_
+
+> npm install --global yarn
+
+#### second step:
+
+_You can also try this way indicating directly the version to
+install:_
+
+> yarn install
+
+#### check version:
+
+_we can use the following command to check the version we
+installed:_
+
+> yarn dev
+
+#### more information about the installation:
+
+\_ Here you will have more information about the installation of:
+
+[installation yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable)
+
 > ## General Philosoph:
 
 _The project aims to facilitate starting up quickly and following industry best practices.
@@ -284,8 +317,8 @@ _The system has common patterns such as spacing (The Box Model), color palettes,
 - **composition:** break down components into smaller parts with minimal props to keep complexity low, and compose them together.
 
 - **filenames:** create folders with and index, lowercase with dash separator for dirs and names`components/auth-wizard`
-  and five the following extensions each file acordingly 
-`.config.ts`, `.component.tsx`, `.test.ts`, `.context.tsx`, `.type.ts`, `.hook.ts`
+  and five the following extensions each file acordingly
+  `.config.ts`, `.component.tsx`, `.test.ts`, `.context.tsx`, `.type.ts`, `.hook.ts`
 
 - Bypass the export default.
 
@@ -333,7 +366,7 @@ Like any pattern, RORO should be seen as just another tool in our tool box. We u
 
 ### ReactJS Conventions:
 
-- declare component with function keyword
+- declare component with `function` keyword
 - use const for methods
 - place code in the following order
 
@@ -346,20 +379,18 @@ Like any pattern, RORO should be seen as just another tool in our tool box. We u
 
   ```javascript
   export function MyReactComponent({ myParam }: MyReactComponetParams) {
-  const myMethod = () => console.log(myParam)
+    const myMethod = () => console.log(myParam);
 
-  return (
-    <div className="md:flex bg-slate-100 ">
-      A new world awaits. <br /> be the first to discover it.
-      <button onClick={myMethod}>let's goo!</button>
-    </div>
-  )
-
+    return (
+      <div className="md:flex bg-slate-100 ">
+        A new world awaits. <br /> be the first to discover it.
+        <button onClick={myMethod}>let's goo!</button>
+      </div>
+    );
   }
 
   export interface MyReactComponetParams {
-  myParam: boolean
-
+    myParam: boolean;
   }
   ```
 
