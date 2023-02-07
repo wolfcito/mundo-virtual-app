@@ -3,7 +3,7 @@ export function Card() {
     <div className="flex justify-center mx-12 bg-black w-300 h-80 rounded-2xl my-20 ">
       <div className="bg-black w-250 h-60 mt-4 mr-4 mb-4 ml-4">
         <img
-          className="bg-contain w-screen h-50 object-cover"
+          className="bg-contain w-screen h-full object-cover"
           src="https://static.vecteezy.com/system/resources/thumbnails/000/595/331/small/20012019-05.jpg"
         />
       </div>
