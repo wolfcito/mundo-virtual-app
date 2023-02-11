@@ -14,6 +14,22 @@ export default function Home() {
       <main>
         <Navbar />
         <Card />
+        <h1>Most popular</h1>
+
+        <div className="container">
+          <img src="https://static2.mujerhoy.com/www/multimedia/201710/30/media/cortadas/17.jpg" />
+          <div>
+            <h1>Dribbble Rusia VK Community officially launched!</h1>
+
+            <p>
+              Send your portfolio to our manager on e-mail and get a chance to
+              be a part of our new big dribbblers group
+            </p>
+
+            <span>aug 14,2020</span>
+          </div>
+        </div>
+
         <div>Development and Research</div>
         <div>Adding our grain of sand.</div>
 
