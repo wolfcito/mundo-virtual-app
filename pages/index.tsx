@@ -13,7 +13,6 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <Card />
         <div>Development and Research</div>
         <div>Adding our grain of sand.</div>
 
@@ -21,6 +20,10 @@ export default function Home() {
           MundoVirtual focuses its efforts to support people to translate their
           ideas through advice, construction prototypes and land them in an MVP.
         </div>
+
+        <Card />
+        <Card />
+        <Card />
       </main>
     </>
   );
