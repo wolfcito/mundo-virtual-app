@@ -21,9 +21,20 @@ export default function Home() {
           ideas through advice, construction prototypes and land them in an MVP.
         </div>
 
-        <Card />
-        <Card />
-        <Card />
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-2 my-2">
+            <Card />
+          </div>
+          <div className="mx-2">
+            <Card />
+          </div>
+          <div className="mx-2">
+            <Card />
+          </div>
+          <div className="mx-2">
+            <Card />
+          </div>
+        </div>
       </main>
     </>
   );
