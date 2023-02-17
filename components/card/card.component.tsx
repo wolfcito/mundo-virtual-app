@@ -1,6 +1,6 @@
 export function Card({ isExpanded }: { isExpanded?: boolean }) {
   // LSXC => allow conditional option in classnames
-  const mylist
+  const mylist[true,false]
 
   const(second) = () => {}
    return (
