@@ -1,10 +1,9 @@
+const row = "true";
 export function Card({ isExpanded }: { isExpanded?: boolean }) {
   // LSXC => allow conditional option in classnames
-  const mylist[true,false]
 
-  const(second) = () => {}
-   return (
-    <div className="flex flex-col justify-center mx-8 my-2 bg-black rounded-2xl w-300 h-90 md:flex-col md:mx-18 md:my-24 lg:flex lg:mx-20 lg:my-20">
+  return (
+    <div className="{row ≠ "false" ? "flex flex-col justify-center mx-8 my-2 bg-black rounded-2xl w-300 h-90 md:flex-col md:mx-18 md:my-24 lg:flex lg:mx-20 lg:my-20}">
       <div className="m-6 mt-8 mb-4 bg-black w-250 h-80 md:mx-8 lg:m-5">
         <img
           className="object-cover w-screen h-full bg-contain rounded-2xl"
