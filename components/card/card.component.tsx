@@ -1,14 +1,12 @@
 import clsx from "clsx";
-import React, { useState } from "react";
-
 export function Card({ isExpanded = false }: { isExpanded?: boolean }) {
   return (
     <div
       className={clsx(
-        "flex flex-col justify-center mx-8  my-2 bg-black rounded-2xl w-300 h-90 md:flex-col lg:my-20",
+        "flex flex-col justify-center mx-8 my-2 bg-black rounded-2xl w-300 h-90 md:flex-col",
         isExpanded
-          ? "lg:flex-col md:my-18"
-          : "lg:flex-row md:mx-20 my-24 lg:mx-16 lg:my-20 lg:h-70"
+          ? "md:my-18 md:mx-4 lg:mx-3 lg:my-3 lg:flex-col"
+          : "lg:flex-row md:mx-20 my-20 lg:mx-16 lg:my-18 lg:h-70"
       )}
     >
       <div className="m-6 mt-8 mb-4 bg-black w-250 h-80 md:mx-8 lg:m-5">
