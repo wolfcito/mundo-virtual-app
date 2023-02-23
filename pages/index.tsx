@@ -20,15 +20,14 @@ export default function Home() {
           MundoVirtual focuses its efforts to support people to translate their
           ideas through advice, construction prototypes and land them in an MVP.
         </div>
-        <Card isExpanded />
         <Card />
-        <div className="grid grid-cols-1 gap-4 mx-8 my-6 md:grid-cols-2 md:gap-2 md:mx-4 lg:grid-cols-3 lg:mx-10 lg:my-2 lg:gap-2">
+        <div className="grid grid-cols-1 gap-2 mx-4 my-4 md:grid-cols-2 md:gap-1 md:mx-4 lg:grid-cols-3 lg:mx-16 lg:gap-2">
           <Card isExpanded />
           <Card isExpanded />
           <Card isExpanded />
           <Card isExpanded />
           <Card isExpanded />
-          <Card />
+          <Card isExpanded />
         </div>
       </main>
     </>
