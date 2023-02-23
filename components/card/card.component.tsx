@@ -5,8 +5,10 @@ export function Card({ isExpanded = false }: { isExpanded?: boolean }) {
   return (
     <div
       className={clsx(
-        "flex flex-col justify-center mx-8 my-2 bg-black rounded-2xl w-300 h-90 md:flex-col md:mx-18 md:my-24 lg:mx-20 lg:my-20",
-        isExpanded ? "lg:flex-col" : "lg:flex-row"
+        "flex flex-col justify-center mx-8  my-2 bg-black rounded-2xl w-300 h-90 md:flex-col lg:my-20",
+        isExpanded
+          ? "lg:flex-col md:my-18"
+          : "lg:flex-row md:mx-20 my-24 lg:mx-16 lg:my-20 lg:h-70"
       )}
     >
       <div className="m-6 mt-8 mb-4 bg-black w-250 h-80 md:mx-8 lg:m-5">
@@ -32,24 +34,25 @@ export function Card({ isExpanded = false }: { isExpanded?: boolean }) {
   );
 }
 
-export function Card2({}: {}) {
+export function Card2() {
   // LSXC => allow conditional option in classnames
-
-  <div className="flex flex-col mx-10 my-10 bg-black rounded-2xl w-72 h-80 md:w-80 md:h-auto lg:w-96 lg:h-96">
-    <div className="w-64 mx-4 mt-4 mb-2 h-52 rounded-xl md:w-72 md:h-60 lg:h-46 lg:mx-8 lg:mt-8 lg:mb-2 lg:w-80 lg:h-70">
-      <img
-        className="object-cover w-screen h-full bg-contain rounded-xl"
-        src="https://thumbs.dreamstime.com/z/ciudad-logo-vector-art-template-y-ejemplo-106960346.jpg"
-      />
+  return (
+    <div className="flex flex-col mx-10 my-10 bg-black rounded-2xl w-72 h-80 md:w-80 md:h-auto lg:w-96 lg:h-96">
+      <div className="w-64 mx-4 mt-4 mb-2 h-52 rounded-xl md:w-72 md:h-60 lg:h-46 lg:mx-8 lg:mt-8 lg:mb-2 lg:w-80 lg:h-70">
+        <img
+          className="object-cover w-screen h-full bg-contain rounded-xl"
+          src="https://thumbs.dreamstime.com/z/ciudad-logo-vector-art-template-y-ejemplo-106960346.jpg"
+        />
+      </div>
+      <div className="items-center mx-4 my-2 h-28 w-72 lg:mx-8 lg:h-40">
+        <h1 className="mb-1 text-base font-medium leading-6 text-white font-nunito md:text-lg md:mb-4 lg:mb-1 lg:text-xl">
+          Incredible 3D illustrations of famous fictional places
+        </h1>
+        <p className="text-xs font-normal font-nunito text-[#A6ADB1] leading-5 md:text-base lg:">
+          Aug 14, 2020
+        </p>
+      </div>
     </div>
-    <div className="items-center mx-4 my-2 h-28 w-72 lg:mx-8 lg:h-40">
-      <h1 className="mb-1 text-base font-medium leading-6 text-white font-nunito md:text-lg md:mb-4 lg:mb-1 lg:text-xl">
-        Incredible 3D illustrations of famous fictional places
-      </h1>
-      <p className="text-xs font-normal font-nunito text-[#A6ADB1] leading-5 md:text-base lg:">
-        Aug 14, 2020
-      </p>
-    </div>
-  </div>;
+  );
   // );
 }

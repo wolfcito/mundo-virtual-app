@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Card } from "~/components/card";
+import { Card, Card2 } from "~/components/card";
 import { Navbar } from "~/components/navbar";
 
 export default function Home() {
@@ -22,10 +22,13 @@ export default function Home() {
         </div>
         <Card isExpanded />
         <Card />
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {/* <Card />
+        <div className="grid grid-cols-1 gap-4 mx-8 my-6 md:grid-cols-2 md:gap-2 md:mx-4 lg:grid-cols-3 lg:mx-32">
+          <Card isExpanded />
+          <Card isExpanded />
+          <Card isExpanded />
+          <Card isExpanded />
+          <Card isExpanded />
           <Card />
-          <Card /> */}
         </div>
       </main>
     </>
