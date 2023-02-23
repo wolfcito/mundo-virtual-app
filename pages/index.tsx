@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <Card isExpanded />
         <Card />
-        <div className="grid grid-cols-1 gap-4 mx-8 my-6 md:grid-cols-2 md:gap-2 md:mx-4 lg:grid-cols-3 lg:mx-32">
+        <div className="grid grid-cols-1 gap-4 mx-8 my-6 md:grid-cols-2 md:gap-2 md:mx-4 lg:grid-cols-3 lg:mx-10 lg:my-2 lg:gap-2">
           <Card isExpanded />
           <Card isExpanded />
           <Card isExpanded />
