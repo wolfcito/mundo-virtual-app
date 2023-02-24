@@ -3,23 +3,23 @@ export function Card({ isExpanded = false }: { isExpanded?: boolean }) {
   return (
     <div
       className={clsx(
-        "flex flex-col justify-center mx-8 my-2 bg-black rounded-2xl w-300 h-90 md:flex-col",
+        "flex flex-col justify-center my-2 bg-black rounded-2xl w-[390px] h-[600px] max-w-[390px] md:flex-col",
         isExpanded
           ? "md:my-18 md:mx-4 lg:mx-3 lg:my-3 lg:flex-col"
-          : "lg:flex-row md:mx-20 my-20 lg:mx-16 lg:my-18 lg:h-70"
+          : "lg:flex-row md:mx-20 md:my-20 lg:h-[360px] lg:w-[1100px] lg:mx-16 lg:my-18"
       )}
     >
-      <div className="m-6 mt-8 mb-4 bg-black w-250 h-80 md:mx-8 lg:m-5">
+      <div className="mx-2 mt-2 mb-4 bg-black w-250 h-80 md:mx-8 lg:m-5">
         <img
           className="object-cover w-screen h-full bg-contain rounded-2xl"
           src="https://static.vecteezy.com/system/resources/thumbnails/000/595/331/small/20012019-05.jpg"
         />
       </div>
-      <div className="m-6 bg-black w-50 h-30 md:m-8 lg:ml-4 lg:mt-14 lg:mr-2">
-        <h1 className="mb-4 text-xl font-bold w-125 md:text-3xl lg:text-4xl">
+      <div className="mx-2 mt-4 mb-6 bg-black w-50 h-30 md:m-8 lg:ml-4 lg:mt-14 lg:mr-2">
+        <h1 className="mb-4 text-base font-extrabold w-125 md:text-3xl lg:text-4xl">
           Dribbble Rusia VK Community officially launched!
         </h1>
-        <p className="mb-8 text-base font-nunito w-100 md:text-xl lg:text-lg lg:mb-6">
+        <p className="mb-4 text-base font-nunito w-100 md:text-xl lg:text-lg lg:mb-6">
           Send your portfolio to our manager on e-mail and get a chance to be a
           part of our new big Dribbblers group!
         </p>
