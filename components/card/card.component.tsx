@@ -5,16 +5,16 @@ export function Card({ isExpanded = false }: { isExpanded?: boolean }) {
       className={clsx(
         "flex flex-col mx-auto my-2 bg-black rounded-2xl w-[390px] max-w-[390px] h-[573px] max-h-[573px]",
         isExpanded
-          ? "md:w-[370px] md:max-w-[370px] md:h-[620px] md:max-h-[620px] md:my-18 md:mx-auto lg:mx-3 lg:my-3 lg:flex-col"
-          : "md:w-[750px] md:max-w-[750px] md:mx-auto md:my-20 lg:h-[360px] lg:max-h-[360px] lg:w-[990px] lg:max-w-[1200px] lg:mx-auto lg:my-18 lg:flex-row "
+          ? "md:w-[372px] md:max-w-[372px] md:h-[620px] md:max-h-[620px] md:my-px  lg:mx-3 lg:my-3 lg:flex-col"
+          : "md:w-[750px] md:max-w-[750px] md:mx-auto md:my-20 lg:h-[360px] lg:max-h-[360px] lg:w-[990px] lg:max-w-[1000px] lg:mx-auto lg:my-18 lg:flex-row "
       )}
     >
       <div
         className={clsx(
-          "mx-2 mt-2 mb-4 bg-black w-[374px] h-72 md:mx-2 lg:m-5",
+          "mx-2 mt-2 mb-4 bg-black w-[374px] max-w-[374px] h-72 md:mx-2 lg:m-5",
           isExpanded
-            ? "md: w-[355px] md: max-w-[355px] md:h-72 md:max-h-[288px]"
-            : "md:w-[740px] md:max-w-[740px] md:h-80 md:max-h-[320px]"
+            ? "md:w-[355px] md:max-w-[355px] md:h-72 md:max-h-[288px]"
+            : "md:w-[740px] md:max-w-[740px] md:h-80 md:max-h-[320px] lg:my-5 lg:ml-5 lg:mr-3"
         )}
       >
         <img

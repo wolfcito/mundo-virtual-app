@@ -21,7 +21,7 @@ export default function Home() {
           ideas through advice, construction prototypes and land them in an MVP.
         </div>
         <Card />
-        <div className="grid grid-cols-1 gap-2 my-4 md:grid-cols-2 md:gap-0.5 md:mx-auto lg:grid-cols-3 lg:mx-16 lg:gap-2">
+        <div className="grid grid-cols-1 gap-y-0.5 my-4 md:grid-cols-2 md:gap-x-px md:mx-auto md:w-[750px] lg:grid-cols-3 lg:mx-16 lg:gap-2">
           <Card isExpanded />
           <Card isExpanded />
           <Card isExpanded />
