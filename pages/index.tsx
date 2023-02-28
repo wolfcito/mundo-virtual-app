@@ -21,13 +21,13 @@ export default function Home() {
           ideas through advice, construction prototypes and land them in an MVP.
         </div>
         <Card />
-        <div className="grid grid-cols-1 gap-y-0.5 my-4 md:grid-cols-2 md:gap-x-px md:mx-auto md:w-[750px] lg:grid-cols-3 lg:mx-16 lg:gap-2">
+        <div className="grid grid-cols-1 gap-y-0.5 my-4 mx-auto md:grid-cols-2 md:gap-x-px md:mx-auto md:w-[750px] lg:w-[990px] lg:max-w-[1300px] lg:grid-cols-3  lg:gap-1">
           <Card isExpanded />
           <Card isExpanded />
           <Card isExpanded />
           <Card isExpanded />
           <Card isExpanded />
-          <Card isExpanded />
+          <Card isExpanded createAt={new Date()} />
         </div>
       </main>
     </>
