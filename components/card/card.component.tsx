@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import React from "react";
-import ReactDatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+
 class Datos extends React.Component {
   constructor() {}
   render({}) 
