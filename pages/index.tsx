@@ -27,8 +27,8 @@ export default function Home() {
           <Card isExpanded />
           <Card isExpanded />
           <Card isExpanded />
-          <Card isExpanded createAt={new Date()} />
         </div>
+        <Card isExpanded createAt={new Date()} />
       </main>
     </>
   );
