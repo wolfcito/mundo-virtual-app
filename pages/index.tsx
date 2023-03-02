@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Card } from "~/components/card";
+
 import { Navbar } from "~/components/navbar";
 
 export default function Home() {
@@ -13,23 +14,6 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <Card />
-        <h1>Most popular</h1>
-
-        <div className="container">
-          <img src="https://static2.mujerhoy.com/www/multimedia/201710/30/media/cortadas/17.jpg" />
-          <div>
-            <h1>Dribbble Rusia VK Community officially launched!</h1>
-
-            <p>
-              Send your portfolio to our manager on e-mail and get a chance to
-              be a part of our new big dribbblers group
-            </p>
-
-            <span>aug 14,2020</span>
-          </div>
-        </div>
-
         <div>Development and Research</div>
         <div>Adding our grain of sand.</div>
 
@@ -37,6 +21,23 @@ export default function Home() {
           MundoVirtual focuses its efforts to support people to translate their
           ideas through advice, construction prototypes and land them in an MVP.
         </div>
+        {/* <Card /> */}
+        <div className="grid grid-cols-1 gap-y-0.5 my-4 mx-auto md:grid-cols-2 md:gap-x-px md:mx-auto md:w-[750px] lg:w-[990px] lg:max-w-[1300px] lg:grid-cols-3  lg:gap-1">
+          {/* <Card isExpanded /> */}
+          {/* <Card isExpanded /> */}
+          {/* <Card isExpanded /> */}
+          <Card
+            isExpanded
+            date={new Date()}
+            title={"hello"}
+            paragraph={""}
+            image={
+              "https://www.shutterstock.com/image-photo/portraite-cute-fluffy-puppy-top-260nw-1897917715.jpg"
+            }
+          />
+          {/* <Card isExpanded /> */}
+        </div>
+        {/* <Card isExpanded createAt={new Date()} /> */}
       </main>
     </>
   );
