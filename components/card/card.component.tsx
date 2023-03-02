@@ -1,17 +1,13 @@
 import clsx from "clsx";
-import React from "react";
+import { CardProps } from "./card.type";
 
-class Datos extends React.Component {
-  constructor() {}
-  render({}) 
-}
-export function Card({ isExpanded = false }: { isExpanded?: boolean,Date,title,paragraph,image}) {
-  let Datos 
-   this._Date = Date;
-   this._title = title;
-   this._paragraph = paragraph;
-   this._image = image;
-  
+export function Card({
+  isExpanded = false,
+  date,
+  title,
+  paragraph,
+  image,
+}: CardProps) {
   return (
     <div
       className={clsx(
@@ -31,7 +27,7 @@ export function Card({ isExpanded = false }: { isExpanded?: boolean,Date,title,p
       >
         <img
           className="object-cover w-screen h-full bg-contain rounded-2xl"
-          src="https://static.vecteezy.com/system/resources/thumbnails/000/595/331/small/20012019-05.jpg"
+          src={image}
         />
       </div>
       <div
@@ -42,52 +38,27 @@ export function Card({ isExpanded = false }: { isExpanded?: boolean,Date,title,p
             : "md:my-6 md:mx-2 md:w-[740px] md:max-w-screen-md  lg:ml-4 lg:mt-14 lg:mr-2"
         )}
       >
-        <h1 {this.state._title}
+        <h1
           className={clsx(
             "mb-4 text-base font-extrabold w-125",
             isExpanded ? "md:text-lg " : "md:text-2xl lg:text-4xl"
           )}
         >
-          Dribbble Rusia VK Community officially launched!
+          {title}
         </h1>
-        <p {this.state.__paragraph}
+        <p
           className={clsx(
             "mb-10 text-base font-nunito w-100",
             isExpanded ? "" : "md:text-xl lg:text-lg lg:mb-8"
           )}
         >
-          Send your portfolio to our manager on e-mail and get a chance to be a
-          part of our new big Dribbblers group!
+          {paragraph}
         </p>
 
-        <p {this.state_Date}className="text-xs text-gray-400 font-nunito md:text-sm lg:text-base">
-          <script>let hoy = new Date;</script>
-          Aug 14,2020
+        <p className="text-xs text-gray-400 font-nunito md:text-sm lg:text-base">
+          {date.toString()}
         </p>
       </div>
     </div>
   );
-}
-2020;
-export function Card2() {
-  // LSXC => allow conditional option in classnames
-  return (
-    <div className="flex flex-col mx-10 my-10 bg-black rounded-2xl w-72 h-80 md:w-80 md:h-auto lg:w-96 lg:h-96">
-      <div className="w-64 mx-4 mt-4 mb-2 h-52 rounded-xl md:w-72 md:h-60 lg:h-46 lg:mx-8 lg:mt-8 lg:mb-2 lg:w-80 lg:h-70">
-        <img
-          className="object-cover w-screen h-full bg-contain rounded-xl"
-          src="https://thumbs.dreamstime.com/z/ciudad-logo-vector-art-template-y-ejemplo-106960346.jpg"
-        />
-      </div>
-      <div className="items-center mx-4 my-2 h-28 w-72 lg:mx-8 lg:h-40">
-        <h1 className="mb-1 text-base font-medium leading-6 text-white font-nunito md:text-lg md:mb-4 lg:mb-1 lg:text-xl">
-          Incredible 3D illustrations of famous fictional places
-        </h1>
-        <p className="text-xs font-normal font-nunito text-[#A6ADB1] leading-5 md:text-base lg:">
-          Aug 14, 2020
-        </p>
-      </div>
-    </div>
-  );
-  // );
 }
