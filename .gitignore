@@ -1,9 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+.env
+
+# dev stuff
+_dev
+
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
+/.yarn
 
 # testing
 /coverage
@@ -31,6 +37,18 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# logs
+*.log
+
+# local stuff 
+_dev
+
+package-lock.json
+
+#local lighthouseci results 
+.lighthouseci
+
+app-engine/graphql/.env.codegen
+
+tsconfig.tsbuildinfo
+.vscode
