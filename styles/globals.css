@@ -8,3 +8,14 @@
     @apply fixed top-0 left-0 right-0 h-2 origin-left bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-500 rounded
   }
 }
+
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+
+  100% {
+    --rotate: 360deg;
+  }
+}
