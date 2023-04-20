@@ -1,6 +1,7 @@
-import pkg from '~/package.json'
-import { AboutIcon, HomeIcon, LogoIcon, MenuIcon } from '~/icons'
 import Link from 'next/link'
+
+import { AboutIcon, HomeIcon, LogoIcon, MenuIcon } from '~/icons'
+import pkg from '~/package.json'
 
 export function Navbar() {
   return (
