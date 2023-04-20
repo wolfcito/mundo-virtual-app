@@ -6,14 +6,7 @@ export function LogoIcon() {
         fill="url(#a)"
       />
       <defs>
-        <linearGradient
-          id="a"
-          x1={15}
-          y1={0}
-          x2={15}
-          y2={21.466}
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id="a" x1={15} y1={0} x2={15} y2={21.466} gradientUnits="userSpaceOnUse">
           <stop stopColor="#8643FF" />
           <stop offset={1} stopColor="#4136F1" />
         </linearGradient>
