@@ -1,7 +1,8 @@
-import Head from "next/head";
-import { Card } from "~/components/card";
+import Head from 'next/head'
 
-import { Navbar } from "~/components/navbar";
+import { Card } from '~/components/card'
+// import { Card } from "~/components/card";
+import { Navbar } from '~/components/navbar'
 
 export default function Home() {
   return (
@@ -18,27 +19,37 @@ export default function Home() {
         <div>Adding our grain of sand.</div>
 
         <div>
-          MundoVirtual focuses its efforts to support people to translate their
-          ideas through advice, construction prototypes and land them in an MVP.
+          MundoVirtual focuses its efforts to support people to translate their ideas through
+          advice, construction prototypes and land them in an MVP.
         </div>
-        {/* <Card /> */}
+
         <div className="grid grid-cols-1 gap-y-0.5 my-4 mx-auto md:grid-cols-2 md:gap-x-px md:mx-auto md:w-[750px] lg:w-[990px] lg:max-w-[1300px] lg:grid-cols-3  lg:gap-1">
           {/* <Card isExpanded /> */}
           {/* <Card isExpanded /> */}
           {/* <Card isExpanded /> */}
+
           <Card
             isExpanded
             date={new Date()}
-            title={"hello"}
-            paragraph={""}
-            image={
-              "https://www.shutterstock.com/image-photo/portraite-cute-fluffy-puppy-top-260nw-1897917715.jpg"
-            }
+            title={'hello'}
+            paragraph={''}
+            image="https://www.shutterstock.com/image-photo/portraite-cute-fluffy-puppy-top-260nw-1897917715.jpg"
           />
-          {/* <Card isExpanded /> */}
+          <div>
+            {/* <div className="relative z-0 w-full h-full">
+  <div className="absolute left-0 right-0 z-10 flex items-center justify-center text-6xl text-center text-transparent top-1/6 bg-clip-text bg-gradient-to-br from-blue-300 to-purple-700">
+    <h1 className="font-serif">Texto</h1>
+  </div>
+  <div className="absolute inset-0 transform scale-125 opacity-75 blur-lg bg-gradient-to-br from-blue-300 to-purple-700"></div>
+</div> */}
+
+            <a className="mt-8 font-sans font-bold text-gray-700 underline" href="#">
+              Enlace
+            </a>
+          </div>
         </div>
         {/* <Card isExpanded createAt={new Date()} /> */}
       </main>
     </>
-  );
+  )
 }
