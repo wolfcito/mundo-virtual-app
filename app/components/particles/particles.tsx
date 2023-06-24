@@ -1,17 +1,10 @@
 'use client'
 
-import React, { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect } from 'react'
 import { useMousePosition } from '~/util/mouse'
+import { Circle, ParticlesProps } from './particles.type'
 
-interface ParticlesProps {
-  className?: string
-  quantity?: number
-  staticity?: number
-  ease?: number
-  refresh?: boolean
-}
-
-export default function Particles({
+export function Particles({
   className = '',
   quantity = 30,
   staticity = 50,
@@ -65,19 +58,6 @@ export default function Particles({
         mouse.current.y = y
       }
     }
-  }
-
-  type Circle = {
-    x: number
-    y: number
-    translateX: number
-    translateY: number
-    size: number
-    alpha: number
-    targetAlpha: number
-    dx: number
-    dy: number
-    magnetism: number
   }
 
   const resizeCanvas = () => {
