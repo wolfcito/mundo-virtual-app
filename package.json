@@ -1,0 +1,49 @@
+{
+  "name": "mundovirtual.solutions",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "fmt": "pnpm rome check . --apply-suggested && pnpm rome format . --write",
+    "prettier:check": "npx prettier --check .",
+    "prettier": "npx prettier --write ."
+  },
+  "dependencies": {
+    "@next/mdx": "^13.4.6",
+    "@types/node": "20.2.1",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "@upstash/redis": "^1.21.0",
+    "contentlayer": "^0.3.3",
+    "framer-motion": "^10.12.16",
+    "lucide-react": "^0.220.0",
+    "markdown-wasm": "^1.2.0",
+    "nanoid": "^4.0.2",
+    "next": "13.4.7-canary.1",
+    "next-contentlayer": "^0.3.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-wrap-balancer": "^0.5.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-pretty-code": "^0.9.8",
+    "rehype-slug": "^5.1.0",
+    "remark-gfm": "^3.0.1",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@opentelemetry/api": "^1.4.1",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.9",
+    "add": "^2.0.6",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-nesting": "^11.3.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "rome": "^11.0.0",
+    "tailwindcss": "^3.3.2",
+    "tailwindcss-debug-screens": "^2.2.1"
+  }
+}
