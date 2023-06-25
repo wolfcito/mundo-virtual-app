@@ -1,1 +1,1 @@
-export * from './particles'
+export * from './particles.component'
