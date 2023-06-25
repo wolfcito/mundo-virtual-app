@@ -1,46 +1,23 @@
 ---
 title: Martial Arts Certification
-description: Project to store a Martial Arts certifications in a blockchain.
+description: Proyecto para almacenar certificados de Artes Marciales con ayuda de una blockchain.
 date: '2022-06-06'
 repository: wolfcito/martial-certificated
 published: true
 ---
 
-In today's digital age, serverless computing has become increasingly popular due to its scalability and cost-efficiency. One of the challenges of serverless computing is to manage resources efficiently, and one critical aspect of this is rate limiting. Rate limiting is a technique that limits the number of requests a client can make to a server over a given period. This technique can prevent abuse, improve performance, and reduce costs. One npm package that helps implement rate limiting for serverless applications is @upstash/ratelimit, built on top of Upstash Redis.
+¡Estamos construyendo algo increíble para ti! Pronto podrás disfrutar de nuestra plataforma revolucionaria que gestionará tus certificados de artes marciales a través de la tecnología blockchain.
 
-Upstash is a managed Redis-compatible database service designed for serverless applications.
+![Martial arts web 3.0 - MundoVirtual](/tkd-mundovirtual-dsktp.jpg)
 
-`@upstash/ratelimit` is an npm package that provides serverless rate limiting using Upstash Redis. The package offers a simple API that can be used to limit the number of requests a client can make within a given time frame. The following algorithms are supported:
+Imagina tener una credencial universal que respalde tus logros en las artes marciales, desde el cinturón blanco hasta los más altos niveles. Nuestro sitio web estará diseñado para almacenar, gestionar y compartir tus certificados de manera segura y transparente, brindándote una experiencia única en la industria.
 
-- Fixed window
-- Sliding window
-- Leaky bucket
+Con la tecnología blockchain, cada certificado estará protegido contra cualquier tipo de manipulación o falsificación, proporcionándote la tranquilidad de que tus logros estarán respaldados de forma inmutable. Además, podrás acceder a tu credencial universal desde cualquier dispositivo, en cualquier momento y lugar, facilitando la demostración de tu experiencia y habilidades.
 
-Using `@upstash/ratelimit` is straightforward. First, you need to install the package using npm:
+Estamos construyendo una comunidad global de practicantes de artes marciales, donde podrás conectarte, compartir experiencias y recibir reconocimiento por tus logros. Imagina la inspiración y motivación que surgirán al estar rodeado de personas con la misma pasión y dedicación que tú.
 
-```bash
-npm install @upstash/ratelimit @upstash/redis
-```
+Aunque nuestro proyecto aún está en construcción, queremos que seas parte de esta emocionante revolución en la gestión de certificados de artes marciales. Únete a nosotros y sé uno de los primeros en disfrutar de esta innovadora plataforma. Estamos trabajando arduamente para brindarte la mejor experiencia posible.
 
-Then, you can use it in your application:
+Mantente atento a las actualizaciones y novedades de nuestro proyecto. Muy pronto podrás experimentar la comodidad, seguridad y autenticidad que ofrece nuestra plataforma basada en blockchain.
 
-```ts
-import { Ratelimit } from '@upstash/ratelimit'
-import { Redis } from '@upstash/redis'
-
-const ratelimit = new Ratelimit({
-  redis: new Redis({
-    url: '',
-    token: '',
-  }),
-  limiter: Ratelimit.slidingWindow(10, '10s'),
-  analytics: true,
-})
-
-// Check if the client has exceeded the rate limit
-const { success } = await ratelimit.limit('identifier')
-```
-
-In the code above, we initialize Upstash with our Upstash Redis credentials and define our rate limiting rules. We then call the `limit` function, passing the identifier. The function returns a Promise that resolves with `success` and some other useful data.
-
-`@upstash/ratelimit` is a useful npm package for serverless rate limiting that simplifies the process of implementing rate limiting for serverless applications. The package is built on top of Upstash Redis, which provides a complete solution for serverless applications. With `@upstash/ratelimit`, serverless developers can easily implement rate limiting, which can help prevent abuse, improve performance, and reduce costs.
+¡Prepárate para elevar tu práctica de artes marciales a un nuevo nivel y ser reconocido como un verdadero maestro! Estamos ansiosos por compartir contigo este emocionante viaje.
