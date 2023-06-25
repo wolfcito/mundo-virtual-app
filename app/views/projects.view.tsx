@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import React from 'react'
 import { allProjects } from 'contentlayer/generated'
-import { Navigation } from '~/app/components/nav'
-import { Card } from '~/app/components/card'
+
+import { Card } from '~/app/components/card/card.component'
+import { Article } from '~/app/projects/article'
 
 import { Redis } from '@upstash/redis'
 import { Eye } from 'lucide-react'
-import { Article } from '../projects/article'
 
 const redis = Redis.fromEnv()
 
@@ -41,7 +40,6 @@ export async function Projects() {
 
   return (
     <div className="relative pb-16">
-      {/* <Navigation /> */}
       <div className="mx-auto max-w-7xl space-y-8 px-6 pt-16 md:space-y-16 md:pt-24 lg:px-8 lg:pt-32">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
