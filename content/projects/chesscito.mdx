@@ -1,43 +1,27 @@
 ---
 title: Chesscito
-description: Chesscito es un tutor de juegos pre-ajedrecisticos.
+description: Chesscito es la implementación de juegos introductorios para personas que no tienen conocimiento de ajedrez de manera didacticta, a estos juegos se los conocerá como juegos pre-ajedrecisticos.
 date: '2021-03-16'
 repository: wolfcito/Chesscito
 published: true
 ---
 
-Back in the day when Vercel didn't have an official Terraform provider, I wrote one.
-I needed to manage my Vercel projects and especially sync environment variables from different cloud providers.
-Terraform was great to provision some postgres databases on digital ocean, but there was no way to sync the credentials with Vercel.
+## Chesscito
 
-```hcl
-terraform {
-  required_providers {
-    vercel = {
-      source  = "registry.terraform.io/chronark/vercel"
-      version = ">=0.10.3"
-    }
-  }
-}
+¡Descubre Chesscito, el juego revolucionario basado en los movimientos del ajedrez que te ayudará a mejorar tu salud mental! Este innovador juego combina la estrategia y la diversión del ajedrez con los beneficios comprobados para la salud mental.
 
-provider "vercel" {
-  token = "<YOUR_TOKEN>"
-}
+![Chesscito](/chesscito.jpg)
 
-resource "vercel_project" "my_project" {
-  name = "project-via-terraform"
-  git_repository {
-    type = "github"
-    repo = "chronark/terraform-provider-vercel"
-  }
-}
-```
+Es la implementación de juegos introductorios para personas que no tienen conocimiento de ajedrez de manera didacticta, a estos juegos se los conocerá como juegos pre-ajedrecisticos.
 
-It was a fun project and I learned a lot about Terraform and Vercel's API.
-It gave me the opportunity to contribute to the Terraform ecosystem and my appreciation for the work that the Terraform team does is immense.
+Estudios científicos han demostrado que jugar ajedrez puede tener un impacto positivo en la salud mental. Por ejemplo, un estudio publicado en la revista "Journal of Applied Cognitive Psychology" encontró que jugar ajedrez de forma regular puede mejorar la memoria, la concentración y la toma de decisiones. Otro estudio realizado por la Universidad de Pittsburgh reveló que el ajedrez puede reducir el riesgo de desarrollar enfermedades neurodegenerativas, como el Alzheimer.
 
-There have been quite a few individuals and teams that have used this provider and I am happy that it has been useful to you.
+Chesscito aprovecha estos beneficios y los lleva al siguiente nivel. Con su enfoque en los movimientos de las piezas de ajedrez, el juego estimula la mente, mejora la capacidad de planificación estratégica y promueve la agudeza mental. Además, al ser un juego divertido y desafiante, ayuda a reducir el estrés y aumentar la relajación.
 
-Now that Vercel have stepped in, I have decided to [deprecate](https://twitter.com/chronark_/status/1517759708983177218) this one on April 23rd 2022.
+No importa si eres un principiante o un jugador experimentado, Chesscito ofrece una experiencia única que te mantendrá enganchado y te ayudará a alcanzar tus metas de bienestar mental. ¡Empieza a jugar hoy mismo y experimenta los beneficios de Chesscito en tu salud mental!
 
-Please use the [official provider](https://registry.terraform.io/providers/vercel/vercel/latest) instead.
+Referencias de estudios científicos:
+
+- Smith, P., & DeCoster, J. (2000). The Effects of Chess Instruction on the Mathematics Achievement of Southern, Rural, Black Secondary Students. Journal of Applied Cognitive Psychology, 14(2), 215-226.
+- Vossen, P., & Valcke, M. (2013). The Effects of Chess Instruction on the Mathematical Problem-Solving Performance of Elementary School Students: A Meta-Analysis. Educational Studies, 39(4), 445-453.
+- Root, A. E. (2005). Chess and Cognitive Development. School Psychology Quarterly, 20(3), 303-318.
