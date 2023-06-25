@@ -1,7 +1,10 @@
 'use client'
-import { ArrowLeft } from 'lucide-react'
+
+import clsx from 'clsx'
 import Link from 'next/link'
 import Image from 'next/image'
+
+import { ArrowLeft } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 
@@ -24,13 +27,14 @@ export function Navigation() {
   return (
     <header ref={ref}>
       <div
-        className={`fixed inset-x-0 top-0 z-50 border-b  backdrop-blur duration-200  ${
+        className={clsx(
+          'fixed inset-x-0 top-0 z-50 border-b  backdrop-blur duration-200',
           isIntersecting
             ? 'border-transparent bg-zinc-900/0'
-            : 'bg-zinc-900/500  border-zinc-800 '
-        }`}
+            : 'bg-zinc-900/500 border-zinc-800'
+        )}
       >
-        <div className="container mx-auto flex flex-row-reverse items-center justify-between p-6">
+        <div className="container mx-auto flex items-center justify-between p-6">
           <div className="flex items-center gap-4">
             {pathname !== '/' ? (
               <Link
