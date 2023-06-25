@@ -82,8 +82,6 @@ pnpm dev
 ├── prettier.config.js
 ├── public
 │   ├── favicon.png
-│   ├── fonts
-│   │   └── CalSans-SemiBold.ttf
 │   ├── mundovirtual.png
 │   ├── og.png
 │   └── planetfall.png
