@@ -1,7 +1,8 @@
 'use client'
 
-import Link from 'next/link'
 import clsx from 'clsx'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 import { HeaderProps } from './header.type'
 import { useEffect, useRef, useState } from 'react'
@@ -10,6 +11,7 @@ import { ArrowLeft, Eye, Github, Twitter } from 'lucide-react'
 export function Header({ project, views }: HeaderProps) {
   const ref = useRef<HTMLElement>(null)
   const [isIntersecting, setIntersecting] = useState(true)
+  const router = useRouter()
 
   const links: { label: string; href: string }[] = []
   if (project.repository) {
@@ -83,8 +85,8 @@ export function Header({ project, views }: HeaderProps) {
             </Link>
           </div>
 
-          <Link
-            href="/"
+          <button
+            onClick={() => router.back()}
             className={clsx(
               'duration-200 hover:font-medium',
               isIntersecting
@@ -93,7 +95,7 @@ export function Header({ project, views }: HeaderProps) {
             )}
           >
             <ArrowLeft className="h-6 w-6 " />
-          </Link>
+          </button>
         </div>
       </div>
       <div className="container relative isolate mx-auto overflow-hidden py-24 sm:py-32">
