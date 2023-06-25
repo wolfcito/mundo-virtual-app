@@ -1,8 +1,8 @@
 'use client'
-import { Github, Mail, Twitter, Facebook } from 'lucide-react'
+import { Github, Mail, Facebook } from 'lucide-react'
 import Link from 'next/link'
-import { Navigation } from '~/app/components/nav'
-import { Card } from '~/app/components/card'
+
+import { Card } from '~/app/components/card/card.component'
 import { nanoid } from 'nanoid'
 
 const socials = [
@@ -10,7 +10,7 @@ const socials = [
     icon: <Facebook size={20} />,
     href: 'https://www.facebook.com/mundovirtual.solutions',
     label: 'Facebook',
-    handle: '@mundovirtual.solutions',
+    handle: 'MundoVirtual',
   },
   {
     icon: <Mail size={20} />,
@@ -18,20 +18,19 @@ const socials = [
     label: 'Email',
     handle: 'team',
   },
-  // {
-  // 	icon: <Github size={20} />,
-  // 	href: "https://github.com/chronark",
-  // 	label: "Github",
-  // 	handle: "chronark",
-  // },
+  {
+    icon: <Github size={20} />,
+    href: 'https://github.com/wolfcito/mundo-virtual-app',
+    label: 'Github',
+    handle: 'MundoVirtual',
+  },
 ]
 
 export function Contact() {
   return (
     <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
-      <Navigation />
       <div className="container mx-auto flex min-h-screen items-center justify-center px-4">
-        <div className="mx-auto mt-32 grid w-full grid-cols-1 gap-8 sm:mt-0 sm:grid-cols-2 lg:gap-16">
+        <div className="mx-auto mt-32 grid w-full grid-cols-1 gap-8 sm:mt-0 sm:grid-cols-3 lg:gap-16">
           {socials.map((s) => (
             <Card key={nanoid()}>
               <Link
