@@ -1,19 +1,20 @@
-import '../global.css'
-import { Inter } from 'next/font/google'
-import LocalFont from 'next/font/local'
+import '~/global.css'
+
 import { Metadata } from 'next'
-import { Analytics } from './components/analytics'
-import Head from 'next/head'
+import { Nunito } from 'next/font/google'
+import { Analytics } from '~/app/components/analytics'
 
 export const metadata: Metadata = {
   title: {
     default: 'mundovirtual.solutions',
     template: '%s | mundovirtual.solutions',
   },
-  description: 'Software engineer at mundovirtual.solutions',
+  description:
+    'MundoVirtual ayuda a convertir ideas en realidades a través de asesorías, prototipos y desarrollo de MVP.',
   openGraph: {
     title: 'mundovirtual.solutions',
-    description: 'Software engineer at mundovirtual.solutions',
+    description:
+      'MundoVirtual ayuda a convertir ideas en realidades a través de asesorías, prototipos y desarrollo de MVP.',
     url: 'https://mundovirtual.solutions',
     siteName: 'mundovirtual.solutions',
     images: [
@@ -37,32 +38,20 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  twitter: {
-    title: 'Chronark',
-    card: 'summary_large_image',
-  },
   icons: {
     shortcut: '/favicon.png',
   },
 }
-const inter = Inter({
+const nunito = Nunito({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-nunito',
 })
 
-const calSans = LocalFont({
-  src: '../public/fonts/CalSans-SemiBold.ttf',
-  variable: '--font-calsans',
-})
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(' ')}>
+    <html lang="en" className={nunito.variable}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Analytics />
       </head>
       <body
@@ -74,4 +63,8 @@ export default function RootLayout({
       </body>
     </html>
   )
+}
+
+interface RootLayoutProps {
+  children: React.ReactNode
 }
