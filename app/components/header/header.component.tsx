@@ -1,8 +1,11 @@
 'use client'
-import { ArrowLeft, Eye, Github, Twitter } from 'lucide-react'
+
 import Link from 'next/link'
-import React, { useEffect, useRef, useState } from 'react'
+import clsx from 'clsx'
+
 import { HeaderProps } from './header.type'
+import { useEffect, useRef, useState } from 'react'
+import { ArrowLeft, Eye, Github, Twitter } from 'lucide-react'
 
 export function Header({ project, views }: HeaderProps) {
   const ref = useRef<HTMLElement>(null)
@@ -37,21 +40,23 @@ export function Header({ project, views }: HeaderProps) {
       className="relative isolate overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black"
     >
       <div
-        className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur duration-200 lg:bg-transparent lg:backdrop-blur-none ${
+        className={clsx(
+          'fixed inset-x-0 top-0 z-50 border-b backdrop-blur duration-200 lg:bg-transparent lg:backdrop-blur-none',
           isIntersecting
             ? 'border-transparent bg-zinc-900/0'
             : 'border-zinc-200  bg-white/10 lg:border-transparent'
-        }`}
+        )}
       >
         <div className="container mx-auto flex flex-row-reverse items-center justify-between p-6">
           <div className="flex justify-between gap-8">
             <span
               title="View counter for this page"
-              className={`flex items-center gap-1 duration-200 hover:font-medium ${
+              className={clsx(
+                'flex items-center gap-1 duration-200 hover:font-medium',
                 isIntersecting
                   ? ' text-zinc-400 hover:text-zinc-100'
                   : 'text-zinc-600 hover:text-zinc-900'
-              } `}
+              )}
             >
               <Eye className="h-5 w-5" />{' '}
               {Intl.NumberFormat('en-US', { notation: 'compact' }).format(
@@ -79,12 +84,13 @@ export function Header({ project, views }: HeaderProps) {
           </div>
 
           <Link
-            href="/projects"
-            className={`duration-200 hover:font-medium ${
+            href="/"
+            className={clsx(
+              'duration-200 hover:font-medium',
               isIntersecting
                 ? ' text-zinc-400 hover:text-zinc-100'
                 : 'text-zinc-600 hover:text-zinc-900'
-            } `}
+            )}
           >
             <ArrowLeft className="h-6 w-6 " />
           </Link>
