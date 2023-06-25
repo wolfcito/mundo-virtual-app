@@ -1,9 +1,9 @@
 // @ts-nocheck
-import * as React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 import { MdxProps } from './mdx.type'
+import clsx from 'clsx'
 
 export function Mdx({ code }: MdxProps) {
   const Component = useMDXComponent(code)
@@ -13,10 +13,6 @@ export function Mdx({ code }: MdxProps) {
       <Component components={components} />
     </div>
   )
-}
-
-const clsx = (...args: any) => {
-  return args.filter(Boolean).join(' ')
 }
 
 const components = {
