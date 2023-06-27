@@ -1,11 +1,11 @@
 import Link from 'next/link'
+import { Eye } from 'lucide-react'
+import { Redis } from '@upstash/redis'
 import { allProjects } from 'contentlayer/generated'
 
-import { Card } from '~/app/components/card/card.component'
-import { Article } from '~/app/projects/article'
+import { Card } from '~/app/components/card'
+import { Article } from '~/app/components/article'
 
-import { Redis } from '@upstash/redis'
-import { Eye } from 'lucide-react'
 
 const redis = Redis.fromEnv()
 
@@ -65,9 +65,7 @@ export async function Projects() {
                           dateStyle: 'medium',
                         }).format(new Date(featured.date))}
                       </time>
-                    ) : (
-                      <span>SOON</span>
-                    )}
+                    ) : null}
                   </div>
                   <span className="flex items-center gap-1 text-xs text-zinc-500">
                     <Eye className="h-4 w-4" />{' '}
