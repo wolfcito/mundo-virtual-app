@@ -1,30 +1,10 @@
 'use client'
-import { Github, Mail, Facebook } from 'lucide-react'
+
 import Link from 'next/link'
 
 import { Card } from '~/app/components/card/card.component'
 import { nanoid } from 'nanoid'
-
-const socials = [
-  {
-    icon: <Facebook size={20} />,
-    href: 'https://www.facebook.com/mundovirtual.solutions',
-    label: 'Facebook',
-    handle: 'MundoVirtual',
-  },
-  {
-    icon: <Mail size={20} />,
-    href: 'mailto:team@mundovirtual.solutions',
-    label: 'Email',
-    handle: 'team',
-  },
-  {
-    icon: <Github size={20} />,
-    href: 'https://github.com/wolfcito/mundo-virtual-app',
-    label: 'Github',
-    handle: 'MundoVirtual',
-  },
-]
+import { socials } from '~/data'
 
 export function Contact() {
   return (

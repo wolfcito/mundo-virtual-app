@@ -6,8 +6,8 @@ export function Product({ project }: { project: ProductProps }) {
   return (
     <Link href={`/projects/${project.slug}`}>
       <article className="p-4 md:p-8">
-        <div className="flex">
-          <h2 className="z-20 font-display text-xl font-medium text-zinc-200 duration-1000 group-hover:text-white lg:text-3xl">
+        <div className="flex flex-1">
+          <h2 className="z-20 flex-1 font-display text-xl font-medium text-zinc-200 duration-1000 group-hover:text-white lg:text-3xl">
             {project.title}
           </h2>
           <Image
