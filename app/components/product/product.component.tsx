@@ -4,7 +4,7 @@ import { ProductProps } from './product.type'
 
 export function Product({ project }: { project: ProductProps }) {
   return (
-    <Link href={`/projects/${project.slug}`}>
+    <Link href="https://m.me/mundovirtual.solutions" target="_blank">
       <article className="p-4 md:p-8">
         <div className="flex flex-1">
           <h2 className="z-20 flex-1 font-display text-xl font-medium text-zinc-200 duration-1000 group-hover:text-white lg:text-3xl">
