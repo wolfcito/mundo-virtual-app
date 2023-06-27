@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { ParticleLayout } from '~/app/components/layout'
 
 export function Home() {
@@ -22,13 +23,13 @@ export function Home() {
           Transformando ideas en realidad, construyendo juntos una línea de
           código a la vez.
         </h2>
-        <a
+        <Link
           className="rounded-xl bg-purple-600 p-4 text-lg text-white"
           href="https://m.me/mundovirtual.solutions"
           target="_blank"
         >
           Comencemos a construir un proyecto increíble!
-        </a>
+        </Link>
       </div>
     </ParticleLayout>
   )
