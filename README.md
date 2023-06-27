@@ -35,27 +35,56 @@ pnpm dev
 ├── README.md
 ├── app
 │   ├── components
-│   │   ├── analytics.tsx
-│   │   ├── card.tsx
-│   │   ├── mdx.tsx
-│   │   ├── nav.tsx
-│   │   ├── particles.tsx
-│   │   └── views.tsx
-│   ├── contact
-│   │   └── page.tsx
+│   │   ├── analytics
+│   │   │   ├── analytics.component.tsx
+│   │   │   └── index.ts
+│   │   ├── article
+│   │   │   ├── article.component.tsx
+│   │   │   ├── article.type.ts
+│   │   │   └── index.ts
+│   │   ├── card
+│   │   │   ├── card.component.tsx
+│   │   │   ├── card.type.ts
+│   │   │   └── index.ts
+│   │   ├── header
+│   │   │   ├── header.component.tsx
+│   │   │   ├── header.type.ts
+│   │   │   └── index.ts
+│   │   ├── layout
+│   │   │   ├── index.ts
+│   │   │   ├── layout.component.tsx
+│   │   │   └── layout.type.ts
+│   │   ├── mdx
+│   │   │   ├── index.ts
+│   │   │   ├── mdx.component.tsx
+│   │   │   └── mdx.type.ts
+│   │   ├── navigation
+│   │   │   ├── index.ts
+│   │   │   └── navigation.component.tsx
+│   │   ├── particles
+│   │   │   ├── index.ts
+│   │   │   ├── particles.component.tsx
+│   │   │   └── particles.type.ts
+│   │   ├── product
+│   │   │   ├── index.ts
+│   │   │   ├── product.component.tsx
+│   │   │   └── product.type.ts
+│   │   └── report-view
+│   │       ├── index.ts
+│   │       ├── report-view.component.tsx
+│   │       └── report-view.type.ts
 │   ├── layout.tsx
 │   ├── page.tsx
 │   ├── projects
 │   │   ├── [slug]
-│   │   │   ├── header.tsx
 │   │   │   ├── mdx.css
-│   │   │   ├── page.tsx
-│   │   │   └── view.tsx
-│   │   ├── article.tsx
-│   │   ├── layout.tsx
-│   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   └── layout.tsx
 │   └── views
 │       ├── contact.view.tsx
+│       ├── home.view.tsx
+│       ├── index.ts
+│       ├── products.view.tsx
 │       └── projects.view.tsx
 ├── content
 │   └── projects
@@ -69,10 +98,15 @@ pnpm dev
 │       ├── virtual-voting.mdx
 │       └── wolfcito.mdx
 ├── contentlayer.config.js
+├── data
+│   ├── index.ts
+│   ├── products.data.ts
+│   └── socials.data.tsx
 ├── global.css
-├── mdx-components.tsx
-├── next-env.d.ts
-├── next.config.mjs
+├── hook
+│   ├── index.ts
+│   ├── mouse.hook.ts
+│   └── mouse.type.ts
 ├── package.json
 ├── pages
 │   └── api
@@ -81,16 +115,26 @@ pnpm dev
 ├── postcss.config.js
 ├── prettier.config.js
 ├── public
+│   ├── banner-eth-tricolor.png
+│   ├── chesscito.jpg
+│   ├── coin.png
+│   ├── cosmovision.jpg
 │   ├── favicon.png
+│   ├── find.png
+│   ├── fonts
+│   │   └── CalSans-SemiBold.ttf
+│   ├── gift.png
 │   ├── mundovirtual.png
 │   ├── og.png
-│   └── planetfall.png
+│   ├── sofiapps.jpg
+│   ├── tkd-mundovirtual-dsktp.jpg
+│   ├── tkd-mundovirtual.jpeg
+│   ├── virtual-voting.png
+│   └── wolfcito-blog.jpg
 ├── tailwind.config.js
 ├── tsconfig.json
-├── types
-│   └── mdx.d.ts
-└── util
-    └── mouse.ts
+└── types
+    └── mdx.d.ts
 ```
 
 <b style = 'color : blue; font-size: 30px;'>Documentation</b>
