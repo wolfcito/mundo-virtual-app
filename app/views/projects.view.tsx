@@ -6,7 +6,6 @@ import { allProjects } from 'contentlayer/generated'
 import { Card } from '~/app/components/card'
 import { Article } from '~/app/components/article'
 
-
 const redis = Redis.fromEnv()
 
 export async function Projects() {
@@ -40,15 +39,18 @@ export async function Projects() {
 
   return (
     <div className="relative pb-16">
-      <div className="mx-auto max-w-7xl space-y-8 px-6 pt-16 md:space-y-16 md:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto max-w-7xl space-y-8 px-6 pt-16 md:space-y-16 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
             Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            Descubre las creaciones que he forjado en mi camino por dejar una
-            huella en el universo. ¡Impulsa tu proyecto con nuestro software de
-            vanguardia y haz que tu visión se convierta en realidad!
+            Descubre las creaciones que hemos forjado en nuestro camino,
+            tratando de dejar una huella en el universo.
+          </p>
+          <p className="mt-4 italic text-zinc-400">
+            ¡Impulsa tu proyecto con nuestro software de vanguardia y haz que tu
+            visión se convierta en realidad!
           </p>
         </div>
         <div className="h-px w-full bg-zinc-800" />
