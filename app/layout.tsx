@@ -60,6 +60,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         }`}
       >
         {children}
+        <footer className="text-center text-sm text-white">
+          MundoVirtual Solutions 2023
+        </footer>
       </body>
     </html>
   )
