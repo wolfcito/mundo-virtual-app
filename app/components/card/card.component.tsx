@@ -24,7 +24,8 @@ export function Card({ children, className, color = 'zinc' }: CardProps) {
         className,
         {
           'border-zinc-600 hover:border-zinc-400/50': color === 'zinc',
-          'border-purple-500 hover:border-purple-500': color === 'purple',
+          'border-purple-500 shadow hover:border-purple-500 hover:shadow-purple-400':
+            color === 'purple',
         }
       )}
     >
