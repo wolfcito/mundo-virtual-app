@@ -1,14 +1,13 @@
 'use client'
 
 import Link from 'next/link'
-
-import { Card } from '~/app/components/card/card.component'
 import { nanoid } from 'nanoid'
 import { socials } from '~/data'
+import { Card } from '~/app/components/card'
 
 export function Contact() {
   return (
-    <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+    <section className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <div className="container mx-auto flex min-h-screen items-center justify-center px-4">
         <div className="mx-auto mt-32 grid w-full grid-cols-1 gap-8 sm:mt-0 sm:grid-cols-3 lg:gap-16">
           {socials.map((s) => (
@@ -38,6 +37,6 @@ export function Contact() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }

@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ParticleLayout } from '~/app/components/layout'
 
 export function Home() {

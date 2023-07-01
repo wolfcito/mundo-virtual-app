@@ -38,7 +38,7 @@ export async function Projects() {
     )
 
   return (
-    <div className="relative pb-16">
+    <section className="relative pb-16">
       <div className="mx-auto max-w-7xl space-y-8 px-6 pt-16 md:space-y-16 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
@@ -135,6 +135,6 @@ export async function Projects() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
