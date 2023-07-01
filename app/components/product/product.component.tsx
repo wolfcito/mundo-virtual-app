@@ -15,6 +15,7 @@ export function Product({ project }: { project: ProductProps }) {
             width={100}
             height={100}
             alt={project.slug}
+            className="drop-shadow-[0_20px_15px_rgba(168,85,247,0.6)]"
           />
         </div>
         <p className="z-20 mt-4 text-sm text-zinc-400 duration-1000 group-hover:text-zinc-200">
