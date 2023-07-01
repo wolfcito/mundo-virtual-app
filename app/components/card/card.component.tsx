@@ -1,10 +1,9 @@
 'use client'
+import clsx from 'clsx'
+import { CardProps } from './card.type'
 import { motion, useMotionTemplate, useSpring } from 'framer-motion'
 
-import { CardProps } from './card.type'
-import clsx from 'clsx'
-
-export function Card({ children, className }: CardProps) {
+export function Card({ children, className, color = 'zinc' }: CardProps) {
   const mouseX = useSpring(0, { stiffness: 500, damping: 100 })
   const mouseY = useSpring(0, { stiffness: 500, damping: 100 })
 
@@ -21,8 +20,12 @@ export function Card({ children, className }: CardProps) {
     <div
       onMouseMove={onMouseMove}
       className={clsx(
-        'group relative overflow-hidden rounded-xl border border-zinc-600 duration-700 hover:border-zinc-400/50 hover:bg-zinc-800/10 md:gap-8',
-        className
+        'group relative overflow-hidden rounded-xl border  duration-700 hover:bg-zinc-800/10 md:gap-8',
+        className,
+        {
+          'border-zinc-600 hover:border-zinc-400/50': color === 'zinc',
+          'border-purple-500 hover:border-purple-500': color === 'purple',
+        }
       )}
     >
       <div className="pointer-events-none">
