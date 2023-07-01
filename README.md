@@ -107,6 +107,9 @@ pnpm dev
 │   ├── index.ts
 │   ├── mouse.hook.ts
 │   └── mouse.type.ts
+├── mdx-components.tsx
+├── next-env.d.ts
+├── next.config.mjs
 ├── package.json
 ├── pages
 │   └── api
@@ -121,9 +124,11 @@ pnpm dev
 │   ├── cosmovision.jpg
 │   ├── favicon.png
 │   ├── find.png
-│   ├── fonts
-│   │   └── CalSans-SemiBold.ttf
 │   ├── gift.png
+│   ├── images
+│   │   ├── black-elixir-potion.mundovirtual.png
+│   │   ├── gold-elixir-potion.mundovirtual.png
+│   │   └── purple-elixir-potion.mundovirtual.png
 │   ├── mundovirtual.png
 │   ├── og.png
 │   ├── sofiapps.jpg
