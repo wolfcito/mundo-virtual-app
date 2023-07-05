@@ -24,7 +24,7 @@ export function Home() {
           código a la vez.
         </h2>
         <Link
-          className="mx-4 flex flex-wrap justify-center rounded-xl bg-purple-600 p-4 text-lg text-white"
+          className="mx-4 flex flex-wrap justify-center rounded-xl border border-purple-600 p-4 text-lg text-white outline-2 outline-purple-500/50"
           href="https://m.me/mundovirtual.solutions"
           target="_blank"
         >
