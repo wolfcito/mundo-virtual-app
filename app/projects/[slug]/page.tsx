@@ -1,4 +1,4 @@
-import { Redis } from '@upstash/redis/with-fetch'
+import { Redis } from '@upstash/redis'
 import { notFound } from 'next/navigation'
 import { allProjects } from 'contentlayer/generated'
 
@@ -35,7 +35,7 @@ export default async function PostPage({ params }: PostProps) {
       <ReportView slug={project.slug} />
       <Header project={project} views={views} />
 
-      <article className="prose prose-zinc prose-quoteless mx-auto px-4 py-12">
+      <article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
         <Mdx code={project.body.code} />
       </article>
     </div>
